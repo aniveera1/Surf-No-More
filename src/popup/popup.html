@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Surf No More</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Stop mindlessly surfing the web through passive feedback regarding your browsing habits!">
+    <meta name="keywords" content="Surf No More, productivity, Google Chrome, extension, time management, browsing, efficiency">
+    <meta name="author" content="Anirudh Veeraragavan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerContainer">
+            <span id="headerText">Surf No More</span>
+            <img id="headerImg" src="/img/board.png">
+        </div>
+    </header>
+
+    <section>
+        <div id="timerContainer">
+            <span class="timerText">Time Spent Online:</span><br>
+            <span class="timerText" id="timeSpent"></span>
+        </div>
+    </section>
+    <hr id="sectionBreak">
+    <section>
+        <div id="otherContainer">
+            <span class="timerText">In that time you could have:</span>
+            <span>Burned X cal walking (0.037/min)</span>
+            <span>Read X pages from a book (0.5/min)</span>
+            <span>
+            <span>Saved X percent of your life</span>
+        </div>
+    </section>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

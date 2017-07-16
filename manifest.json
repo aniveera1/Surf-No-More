@@ -1,0 +1,21 @@
+{
+	// Specify which manifest version to follow, version 1 is deprecated
+  	"manifest_version": 2,
+
+  	// Required extension identifiers
+  	"name": "Surf No More",
+  	"short_name": "Surf No More",
+  	"version": "1.0",
+
+  	"description": "Stop mindlessly surfing the web through passive feedback regarding your browsing habits!",
+  	"icons": { 	"16": "img/icon.png",
+            	"48": "img/icon.png",
+               "128": "img/icon.png" },
+
+    // Extension icon for Chrome toolbar
+    "browser_action": {	"default_title": "Check my browsing!",
+    					"default_popup": "src/popup/popup.html" },
+
+    // Background script that handles timing
+    "background": {	"page": "background.html" }
+}
