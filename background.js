@@ -12,6 +12,8 @@ document.getElementById("startTime").innerHTML = startTime.getTime();
 // reset once all open windows have been closed
 chrome.windows.onCreated.addListener(function(window) {
 	totalOpenWindows = totalOpenWindows + 1;
+	var options = {type:"basic",title:"test",message:"30 sec have passed"};
+	chrome.notifications.create(null, options, function(notificationId){});
 })
 
 // Determine whether all windows have been closed and time
