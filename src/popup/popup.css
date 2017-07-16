@@ -1,4 +1,5 @@
 @font-face { font-family: rale; src: url('/lib/fonts/Raleway-Regular.ttf'); }
+@font-face { font-family: light; src: url('/lib/fonts/HelveticaNeue-Thin.otf'); }
 
 html {
 	background-color: #EBEBEB;
@@ -32,15 +33,23 @@ body {
 #timerContainer {
 	margin-left: 3px;
 }
-.timerText {
+.titleText {
 	font-family: rale;
 	color: black;
 	font-size: 17px;
+	letter-spacing: 1px;
 }
-#timeSpent {
+.subtitleText {
+	font-family: light;
+	color: black;
+	font-size: 17px;
+	letter-spacing: 0.75px;
 	margin-left: 2px;
 }
 #sectionBreak {
 	width: 100%;
 	color: #BBBBBB;
+}
+#otherContainer {
+	margin-left: 3px;
 }

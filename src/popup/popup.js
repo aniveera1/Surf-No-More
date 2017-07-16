@@ -80,6 +80,21 @@ if (diff >= MS_SECOND) {		// Milliseconds in a second
 timeSpent = yearString + monthString + dayString + hourString + minString + secString;
 document.getElementById("timeSpent").innerHTML = timeSpent;
 
+// Determine the values for the alternative actions
+var minutes = Math.floor((Number(currentTime.getTime() - startTime.getTime())) / MS_MINUTE);
+
+var pageCount = (minutes * 0.5).toFixed(2);
+var calCount = (minutes * 0.037).toFixed(2);
+var writeCount = (minutes * 15).toFixed(1);
+var percentCount = ((minutes / 39420000) * 100).toFixed(5);
+
+document.getElementById("readCount").innerHTML = pageCount;
+document.getElementById("calCount").innerHTML = calCount;
+document.getElementById("writeCount").innerHTML = writeCount;
+document.getElementById("percentCount").innerHTML = percentCount;
+
+
+
 
 
 
